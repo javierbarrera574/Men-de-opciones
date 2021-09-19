@@ -67,6 +67,14 @@ namespace WindowsFormsApp2
                     txtOpcion.Text = "4: cohete";
                     lblResultado.Text = "Elegiste viajar en cohete";
                     break;
+                case 5:
+                    txtOpcion.Text = "5: avion";
+                    lblResultado.Text = "Elegiste viajar en avion";
+                    break;
+                case 6:
+                    txtOpcion.Text = "6: bicicleta";
+                    lblResultado.Text = "Elegiste viajar en bicicleta";
+                    break;
             }
         }
         private void Suma()
