@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp2
 {
-    partial class Form1
+    partial class Menú
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
             this.txtOpcion = new System.Windows.Forms.TextBox();
             this.btEleccion = new System.Windows.Forms.Button();
             this.btLlamar = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblResultado
@@ -92,30 +92,31 @@ namespace WindowsFormsApp2
             this.btLlamar.TabIndex = 7;
             this.btLlamar.Text = "Llamar";
             this.btLlamar.UseVisualStyleBackColor = true;
+            this.btLlamar.Click += new System.EventHandler(this.btLlamar_Click);
             // 
-            // checkedListBox1
+            // comboBox1
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(50, 74);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(150, 199);
-            this.checkedListBox1.TabIndex = 8;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(49, 174);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // Form1
+            // Menú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btLlamar);
             this.Controls.Add(this.btEleccion);
             this.Controls.Add(this.txtOpcion);
             this.Controls.Add(this.btCerrar);
             this.Controls.Add(this.lblResultado);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "Menú";
+            this.Text = "Menú de opciones";
+            this.Load += new System.EventHandler(this.Menú_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,7 +128,7 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.TextBox txtOpcion;
         private System.Windows.Forms.Button btEleccion;
         private System.Windows.Forms.Button btLlamar;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

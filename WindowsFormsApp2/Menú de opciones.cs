@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class Menú : Form //Menú es el objeto de la clase Form
     {
-        int opcion = 0;
+       
 
 
-        public Form1()
+        public Menú()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Menú_Load(object sender, EventArgs e)
         {
-            lblResultado.Text = "";
+            
         }
 
         private void txtOpcion_TextChanged(object sender, EventArgs e)
@@ -39,16 +39,14 @@ namespace WindowsFormsApp2
 
         private void btEleccion_Click_1(object sender, EventArgs e)
         {
-            
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
             //MENU DE OPCIONES
 
+            lblResultado.Visible = true;
 
             int opciones = 0;
 
+
+            
             switch (opciones)
             {
                 case 1:
@@ -77,20 +75,29 @@ namespace WindowsFormsApp2
                     break;
             }
         }
-        private void Suma()
-        {
-            int num1  =0;
-            int num2 =0;
-            txtOpcion.Text = ($"El resultado es {num1 + num2}");
 
-            
+        private void btLlamar_Click(object sender, EventArgs e)
+        {
+
+            /*ESTE BOTON TENDRIA QUE LLAMAR A OTRO FORMULARIO PARA DARME MAS OPCIONES 
+             * DENTRO DE LAS OPCIONES PRINCIPALES, UNA VEZ QUE YO ELIJA UNA
+             * ME DESPLEGA OTRO FORMULARIO CON SUBOPCIONES
+             */
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+    }
+       
     }
     
  
 
-}
+
 
 
 
