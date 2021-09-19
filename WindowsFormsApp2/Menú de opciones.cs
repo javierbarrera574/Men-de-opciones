@@ -82,18 +82,17 @@ namespace WindowsFormsApp2
             /*ESTE BOTON TENDRIA QUE LLAMAR A OTRO FORMULARIO PARA DARME MAS OPCIONES 
              * DENTRO DE LAS OPCIONES PRINCIPALES, UNA VEZ QUE YO ELIJA UNA
              * ME DESPLEGA OTRO FORMULARIO CON SUBOPCIONES
+             * SEGUIR VIENDO EL VIDEO SOBRE COMO CREAR EL FORMULARIO
+             * VER COMO LO PIENSA Y ADAPTARLO A ESTE CODIGO
+             * CON LO PEDIDO, MANEJO DE CLASES, ESTRUCTURAS, EVENTOS , PROPIEDADES, ETC
              */
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-
-        }
-    }
        
     }
+       
+}
     
  
 

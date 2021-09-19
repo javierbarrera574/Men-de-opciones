@@ -34,7 +34,6 @@ namespace WindowsFormsApp2
             this.txtOpcion = new System.Windows.Forms.TextBox();
             this.btEleccion = new System.Windows.Forms.Button();
             this.btLlamar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblResultado
@@ -94,21 +93,11 @@ namespace WindowsFormsApp2
             this.btLlamar.UseVisualStyleBackColor = true;
             this.btLlamar.Click += new System.EventHandler(this.btLlamar_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(49, 174);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // Menú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btLlamar);
             this.Controls.Add(this.btEleccion);
             this.Controls.Add(this.txtOpcion);
@@ -128,7 +117,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.TextBox txtOpcion;
         private System.Windows.Forms.Button btEleccion;
         private System.Windows.Forms.Button btLlamar;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
