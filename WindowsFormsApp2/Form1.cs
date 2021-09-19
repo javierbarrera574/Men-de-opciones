@@ -35,11 +35,11 @@ namespace WindowsFormsApp2
             this.Close();//usar esto para depurar el codigo de la calculadora
         }
 
-     
+
 
         private void btEleccion_Click_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace WindowsFormsApp2
 
 
             int opciones = 0;
-            
+
             switch (opciones)
             {
                 case 1:
@@ -57,8 +57,19 @@ namespace WindowsFormsApp2
                     break;
             }
         }
+        private void Suma()
+        {
+            int num1  =0;
+            int num2 =0;
+            txtOpcion.Text = ($"El resultado es {num1 + num2}");
+
+
+        }
     }
+    
+ 
+
 }
 
 
-//CONECTAR SI O SI A GitHub Y SUBIRLO AL REPOSITORIO
+
