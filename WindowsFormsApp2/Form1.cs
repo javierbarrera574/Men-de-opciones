@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
 
         private void btEleccion_Click_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,7 +53,19 @@ namespace WindowsFormsApp2
             {
                 case 1:
                     txtOpcion.Text = "1: automovil";
-                    lblResultado.Text = "Elegiste automovil";
+                    lblResultado.Text = "Elegiste viajar automovil";
+                    break;
+                case 2:
+                    txtOpcion.Text = "2: tren";
+                    lblResultado.Text = "Elegiste viajar en tren";
+                    break;
+                case 3:
+                    txtOpcion.Text = "3: helicoptero";
+                    lblResultado.Text = "Elegiste viajar en helicoptero";
+                    break;
+                case 4:
+                    txtOpcion.Text = "4: cohete";
+                    lblResultado.Text = "Elegiste viajar en cohete";
                     break;
             }
         }
@@ -63,6 +75,7 @@ namespace WindowsFormsApp2
             int num2 =0;
             txtOpcion.Text = ($"El resultado es {num1 + num2}");
 
+            
 
         }
     }
